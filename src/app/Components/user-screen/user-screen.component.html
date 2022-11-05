@@ -1,24 +1,26 @@
-<table class="table table-striped">
+<div class="container mt-5">
+  <table class="table table-striped">
     <thead>
-        <tr>
-            <th scope="col">SR No</th>
-            <th scope="col">ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">EMail</th>
-            <th scope="col">Phone</th>
-            <th scope="col">website</th>
-            <th scope="col">company</th>
-        </tr>
+      <tr>
+        <th scope="col">SR No</th>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">EMail</th>
+        <th scope="col">Phone</th>
+        <th scope="col">website</th>
+        <th scope="col">company</th>
+      </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let user of userlist; index as i">
-            <th scope="row">{{i + 1}}</th>
-            <td>{{user.id}}</td>
-            <td>{{user.name}}</td>
-            <td>{{user.email}}</td>
-            <td>{{user.phone}}</td>
-            <td>{{user.website}}</td>
-            <td>{{user.company.name}}</td>
-        </tr>
+      <tr *ngFor="let user of userlist; index as i">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.website }}</td>
+        <td>{{ user.company.name }}</td>
+      </tr>
     </tbody>
-</table>
+  </table>
+</div>
